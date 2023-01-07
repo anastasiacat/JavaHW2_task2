@@ -3,13 +3,10 @@ public class Main {
         int balance = 100; //сумма на счету клиента
         int refill = 1100; //сумма пополнения счета
         int resultBalance; //итоговая сумма на счету клиента
-        int bonuce; //бонусные рубли за пополнение счета
+        int bonuce = 0; //бонусные рубли за пополнение счета
 
         if (refill > 1000) {
             bonuce = refill / 100;
-        }
-        else {
-            bonuce = 0;
         }
 
         resultBalance = balance + refill + bonuce;
